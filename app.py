@@ -5,7 +5,7 @@ import numpy as np
 # Load the vectorizer and model
 @st.cache_resource
 def load_model_and_vectorizer():
-    with open("vectorizer.pkl", "rb") as vec_file:
+    with open("regional_model", "rb") as vec_file:
         vectorizer = pickle.load(vec_file)
     with open("tfidf_vectorizer.pkl", "rb") as model_file:
         model = pickle.load(model_file)
